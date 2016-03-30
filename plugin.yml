@@ -1,0 +1,6 @@
+name: EasyCMD
+main: EasyCMD\EasyCMD
+version: 1.0
+api: [1.0.0, 2.0.0, 3.0.0]
+commands:
+# All commands 4 letters or less will be excluded
