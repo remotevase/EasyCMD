@@ -4,6 +4,7 @@ use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
+use pocketmine\utils\TextFormat as C;
 class EasyCMD extends PluginBase implements Listener {
   public function onEnable(){
         $this->getLogger()->info(C::GREEN."EasyCMD has successfully loaded!");
