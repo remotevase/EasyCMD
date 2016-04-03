@@ -3,4 +3,6 @@ main: EasyCMD\EasyCMD
 version: 1.0
 api: [1.0.0, 2.0.0, 3.0.0]
 commands:
-# All commands 4 letters or less will be excluded
+ EH:
+  description: View all commands shortened by EasyCMD
+  usage: /EH
