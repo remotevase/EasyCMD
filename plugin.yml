@@ -5,4 +5,3 @@ api: [1.0.0, 2.0.0, 3.0.0]
 commands:
  EH:
   description: View all commands shortened by EasyCMD
-  usage: /EH
