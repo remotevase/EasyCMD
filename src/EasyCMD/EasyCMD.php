@@ -118,6 +118,7 @@ class EasyCMD extends PluginBase implements Listener {
       $sender->sendMessage("/wln: Turns the whitelist off");
       break;
     }
+    return true;
   }
     public function onDisable(){
         $this->getLogger()->info(C::DARK_RED."EasyCMD has successfully Disabled!");
