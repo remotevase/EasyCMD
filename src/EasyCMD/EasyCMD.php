@@ -7,7 +7,7 @@ use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
 
-class EasyCMD extends PluginBase implements Listener {
+class EasyCMD extends PluginBase {
   
   public function onEnable(){
         $this->getLogger()->info(C::GREEN."EasyCMD has successfully loaded!");
