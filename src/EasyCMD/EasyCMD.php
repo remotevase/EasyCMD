@@ -88,8 +88,8 @@ class EasyCMD extends PluginBase implements Listener {
       case "wln":
       $this->getServer()->dispatchCommand(new ConsoleCommandSender("whitelist off"));
       break;
-      case "EH":
-      $sender->sendMessage("/EH: Show the EasyCMD help page");
+      case "eh":
+      $sender->sendMessage("/eh: Show the EasyCMD help page");
       $sender->sendMessage("/s: Change your gamemode to survival");
       $sender->sendMessage("/c: Change your gamemode to creative");
       $sender->sendMessage("/a: Change your gamemode to adventure");
