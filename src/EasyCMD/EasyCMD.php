@@ -14,7 +14,7 @@ class EasyCMD extends PluginBase implements Listener {
         $this->getLogger()->info(C::YELLOW."Type '/EH' to find commands!");
     }
   
-  public function onCommand(CommandSender $s, Command $cmd, $label, array $args){
+  public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
     switch(strtolower($cmd->getName())){
       case "s":
       $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 0 {$s}"));
