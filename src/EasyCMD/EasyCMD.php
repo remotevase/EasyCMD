@@ -17,16 +17,16 @@ class EasyCMD extends PluginBase implements Listener {
   public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
     switch(strtolower($cmd->getName())){
       case "s":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 0 {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 0 {$sender}"));
       break;
       case "c":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 1 {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 1 {$sender}"));
       break;
       case "a":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 2 {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 2 {$sender}"));
       break;
       case "sp":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 3 {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("gamemode 3 {$sender}"));
       break;
       case "bl":
       $this->getServer()->dispatchCommand(new ConsoleCommandSender("banlist"));
@@ -44,10 +44,10 @@ class EasyCMD extends PluginBase implements Listener {
       $this->getServer()->dispatchCommand(new ConsoleCommandSender("defaultgamemode 3"));
       break;
       case "al":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("pardon {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("pardon {$sender}"));
       break;
       case "alip":
-      $this->getServer()->dispatchCommand(new ConsoleCommandSender("pardon-ip {$s}"));
+      $this->getServer()->dispatchCommand(new ConsoleCommandSender("pardon-ip {$sender}"));
       break;
       case "pl":
       $this->getServer()->dispatchCommand(new ConsoleCommandSender("plugins"));
