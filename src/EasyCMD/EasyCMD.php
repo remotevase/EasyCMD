@@ -10,7 +10,8 @@ use pocketmine\utils\TextFormat as C;
 class EasyCMD extends PluginBase {
   
   public function onEnable(){
-        $this->getLogger()->info(C::GREEN."EasyCMD has successfully loaded!");
+    $this->getServer()->getPluginManager()->registerEvents($this, $this);    
+    $this->getLogger()->info(C::GREEN."EasyCMD has successfully loaded!");
         $this->getLogger()->info(C::YELLOW."Type '/EH' to find commands!");
     }
   
