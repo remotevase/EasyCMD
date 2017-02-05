@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/remotevase/EasyCMD
+branches:
+- master
+projects:
+  EasyCMD:
+    path: ""
+...
