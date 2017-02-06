@@ -4,10 +4,11 @@ namespace EasyCMD;
 
 use pocketmine\command\{Command, CommandSender, ConsoleCommandSender};
 use pocketmine\Player;
+use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as C;
 
-class EasyCMD extends PluginBase {
+class EasyCMD extends PluginBase implements Listener{
   
   public function onEnable(){
     $this->getServer()->getPluginManager()->registerEvents($this, $this);    
